@@ -347,9 +347,9 @@
   transform: translate(475px, 56px);
 }
 .coin_dropdown {
-  position: fixed;
+  position: absolute;
   inset: 0px auto auto 0px;
-  transform: translate(1187px, 55px);
+  transform: translate(0 ,63px);
   border-radius: 16px;
   padding-bottom: 4px;
   padding-top: 4px;

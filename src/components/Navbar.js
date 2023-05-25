@@ -10,6 +10,9 @@ import setting from "../assests/setting.svg";
 import drop from "../assests/drop.svg";
 import img1 from "../assests/img-1.png";
 import exit from "../assests/exit.svg";
+import bnb from "../assests/bnb.png";
+import aptos from "../assests/aptos.png"
+import ethereum from "../assests/ethereum.png"
 import Model from "./Model";
 function Navbar(props) {
   const darkMode = props.darkMode;
@@ -382,9 +385,9 @@ function Navbar(props) {
                 </div>
               </div>
               {/* bnb smart chain */}
-              <div className="h-[70px]" onMouseLeave={()=>{setDropDown6(false)}}>
+              <div className="h-[70px] relative" onMouseLeave={()=>{setDropDown6(false)}}>
                   <div className="flex items-center mr-[8px] h-full">
-                      <div className={`inline-flex items-center ${darkMode?"bg-[#353547]":"bg-[#eff4f5]"} rounded-[16px] h-[32px] pl-[32px] pr-[8px] relative `}onMouseEnter={()=>{setDropDown6(true)}} >
+                      <div className={`inline-flex items-center ${darkMode?"bg-[#353547]":"bg-[#eff4f5]"} rounded-[16px] h-[32px] pl-[32px] pr-[8px] relative `} onMouseEnter={()=>{setDropDown6(true)}} >
                         <div className="left-0 top-0 absolute z-102 max-h-[32px] max-w-[32px] w-full ">
                           <img src={img1} alt="image" />
                         </div>
@@ -405,27 +408,31 @@ function Navbar(props) {
                       </div>
                       <div>
                       <div className={`${dropDown6 ? "block":"hidden"} coin_dropdown  ${!darkMode ? "bg-[white] border-[1px] border-solid border-[#e7e3eb]" :"bg-[#27262c] border-[1px] border-solid border-[#383241]"}`}  >
+                        <div className={` rounded-t-[8px] items-center ${!darkMode ? "bg-[white] border-b-[1px] border-solid border-[#e7e3eb]" :"bg-[#27262c] border-b-[1px] border-solid border-[#383241]"} t-[400] flex text-[16px] h-[48px] justify-between px-[16px] w-full pointer-events-auto  cursor-pointer ${darkMode ? "text-[#b8add2]" : "text-[#7a6eaa]"}`}>Select a NetWork</div>
                         <div className={` ${darkMode?"hover:bg-[#353547]":"hover:bg-slate-200"} rounded-lg`}>
                           <a
                             href="#"
-                            className={`rounded-t-[8px] items-center border-0 font-[400] flex text-[16px] h-[48px] justify-between px-[16px] w-full pointer-events-auto  cursor-pointer ${darkMode ? "text-[#b8add2]" : "text-[#7a6eaa]"}`}
+                            className={`rounded-t-[8px] items-center border-0 font-[600] flex text-[16px] h-[48px] gap-[5px] px-[16px] w-full pointer-events-auto  cursor-pointer tracking-wide text-[#9a6aff] `}
                           >
+                            <img src={bnb}  width={30} alt=""/>
                             BNB Smart Chain
                           </a>
                         </div>
                         <div className={` ${darkMode?"hover:bg-[#353547]":"hover:bg-slate-200"} rounded-lg`}>
                           <a
                             href="#"
-                            className={`rounded-t-[8px] items-center border-0 font-[400] flex text-[16px] h-[48px] justify-between px-[16px] w-full pointer-events-auto cursor-pointer ${darkMode ? "text-[#b8add2]" : "text-[#7a6eaa]"} `}
+                            className={`rounded-t-[8px] items-center tracking-wide border-0 font-[400] flex text-[16px] h-[48px] gap-[5px]   px-[16px] w-full pointer-events-auto cursor-pointer ${darkMode ? "text-[#b8add2]" : "text-[#7a6eaa]"} `}
                           >
+                            <img src={ethereum} width={30} />
                             Ethereum
                           </a>
                         </div>
                         <div className={` ${darkMode?"hover:bg-[#353547]":"hover:bg-slate-200"} rounded-lg`}>
                           <a
                             href="#"
-                            className={`rounded-t-[8px] items-center border-0 font-[400] flex text-[16px] h-[48px] justify-between px-[16px] w-full pointer-events-auto cursor-pointer ${darkMode ? "text-[#b8add2]" : "text-[#7a6eaa]"} `}
+                            className={`rounded-t-[8px] items-center tracking-wide border-0 font-[400] flex text-[16px] gap-[5px] h-[48px] px-[16px] w-full pointer-events-auto cursor-pointer ${darkMode ? "text-[#b8add2]" : "text-[#7a6eaa]"} `}
                           >
+                            <img src={aptos} width={30} />
                             Aptos
                           </a>
                         </div>
