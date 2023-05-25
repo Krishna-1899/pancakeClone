@@ -34,7 +34,7 @@ function Model(props) {
     >
       <div></div>
       <div
-        className={`overflow-visible w-[30%] bottom-auto rounded-[32px] opacity-[1] max-h-[100vh] ${
+        className={`overflow-visible w-fit bottom-auto rounded-[32px] opacity-[1] max-h-[100vh] ${
           darkMode
             ? "bg-[#27262c] border-[#383241_1px_solid] "
             : "border-[#ffff_1px_solid] bg-[#fff]"
