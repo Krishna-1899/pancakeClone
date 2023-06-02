@@ -88,8 +88,8 @@ export default function ImageSwiper(props) {
           </div>
         </div>
       </div>
-      <div className=" absolute bottom-0">
-        {darkMode ? <img src={back2} /> : <img src={back1} />}
+      <div className=" absolute bottom-0 left-0 right-0">
+        {darkMode ? <img src={back2} className="w-full" /> : <img src={back1} className="w-full" />}
       </div>
     </section>
   );
